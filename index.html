@@ -4,12 +4,13 @@
  
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
     <style>
 
         .a{
             float: left;
             margin-left:0;
-			margin-right:30px;
+			margin-right:200px;
         }
         .b img{
             float: left;
@@ -116,5 +117,14 @@
         <img src="./images/image10.png">
     </div>
 </div>
+<script type="text/javascript">
+       
+    $(document).ready(function(){
+        var initial_scale = 1/window.devicePixelRatio;
+       
+        alert($(window).width() + " / " + $(window).height() + " / " +window.devicePixelRatio + " / " + initial_scale);
+    })
+       
+    </script>
 </body>
 </html>
